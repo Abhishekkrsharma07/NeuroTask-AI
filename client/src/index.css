@@ -1,0 +1,179 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== BACKGROUND (FIXED) ===== */
+body {
+  background: #0f172a; /* solid instead of heavy gradient */
+  color: #f1f5f9;
+  min-height: 100vh;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff; /* brighter */
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+p {
+  color: #cbd5f5;
+  font-size: 14px;
+}
+
+/* ===== CARD (FIXED VISIBILITY) ===== */
+.card {
+  background: #1e293b; /* solid instead of transparent */
+  border-radius: 16px;
+  padding: 22px;
+  border: 1px solid #334155;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== CREATE CARD ===== */
+.create-card {
+  border: 1px solid #3b82f6;
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ===== INPUTS (FIXED VISIBILITY) ===== */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: white;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+/* ===== PRIMARY BUTTON ===== */
+.primary-btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px;
+  font-weight: 600;
+  background: #22c55e;
+}
+
+.primary-btn:hover {
+  background: #16a34a;
+}
+
+/* ===== LOGOUT ===== */
+.logout-btn {
+  background: #6366f1;
+}
+
+/* ===== TASK SECTION ===== */
+.tasks-section {
+  margin-top: 30px;
+}
+
+/* ===== TASK CARD ===== */
+.task-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+/* ===== META ===== */
+.task-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* ===== BADGES ===== */
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: white;
+}
+
+.badge.low {
+  background: #22c55e;
+}
+
+.badge.medium {
+  background: #f59e0b;
+}
+
+.badge.high {
+  background: #ef4444;
+}
+
+/* ===== ACTIONS ===== */
+.task-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.danger {
+  background: #ef4444;
+}
