@@ -7,12 +7,21 @@ import authRoutes from "./routes/authRoutes.js"
 import taskRoutes from "./routes/taskRoutes.js"
 import chatRoutes from "./routes/chatRoutes.js"
 
+
+import cors from "cors";
+
+
 dotenv.config()
 
 const app = express()
 
 app.use(cors())
 app.use(express.json())
+
+app.use(cors({
+  origin: "https://neuro-task-ai.vercel.app",
+  credentials: true
+}));
 
 mongoose.connect(process.env.MONGO_URI)
 .then(()=> console.log("MongoDB Connected"))
