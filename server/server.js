@@ -8,7 +8,7 @@ import taskRoutes from "./routes/taskRoutes.js"
 import chatRoutes from "./routes/chatRoutes.js"
 
 
-import cors from "cors";
+
 
 
 dotenv.config()
