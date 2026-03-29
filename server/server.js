@@ -9,8 +9,6 @@ import chatRoutes from "./routes/chatRoutes.js"
 
 
 
-
-
 dotenv.config()
 
 const app = express()
